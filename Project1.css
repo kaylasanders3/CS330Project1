@@ -1,5 +1,37 @@
 body {
-    background-color: rgb(235, 229, 176);  
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: rgb(235, 229, 176);
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#Title {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  font-family: "Playwrite HR", cursive;
+}
+
+
+#Rating {
+  font-size: 20px;
+}
+
+#CoverArt {
+  max-width: 100%;
+  height: auto;
+  border-radius: 100px;
+}
+
+#Summary {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#Actors {
+  list-style-position: inside;
+}
