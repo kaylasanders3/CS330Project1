@@ -3,22 +3,29 @@
 
 <head>
     <title>Pride and Prejudice (2005)</title>
-    <link rel="stylesheet" href="Project1.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR:wght@100..400&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="content">
         <h1 id="Title">Pride and Prejudice (2005)</h1>
-        
+
         <img id="CoverArt" src="https://upload.wikimedia.org/wikipedia/en/8/8b/Pride_%26_Prejudice_2005_%28soundtrack%29.png" width="600" height="600" alt="Pride and Prejudice (2005) Image">
 
         <h5 id="Rating">IMDB Rating: 7.8/10</h5>
 
-        <iframe width="789" height="444" src="https://www.youtube.com/embed/Ur_DIHs92NM" title="Pride &amp; Prejudice (2005) Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe id="Trailer" width="789" height="444" src="https://www.youtube.com/embed/Ur_DIHs92NM" title="Pride &amp; Prejudice (2005) Official Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <br>
 
+        <a id="Link" href="https://www.imdb.com/title/tt0414387/">IMDB Link</a>
+
+        <h3><u>Summary:</u></h3>
         <p id="Summary">The story is based on Jane Austen's novel about five sisters - Jane (Rosamund Pike), Elizabeth (Keira Knightley), Mary (Talulah Riley), Kitty (Carey Mulligan), and Lydia Bennet (Jena Malone) - in Georgian England. Their lives are turned upside down when wealthy young Mr. Bingley (Simon Woods) and his best friend, Mr. Darcy (Matthew Macfadyen), arrive in their neighborhood</p>
-        <p>Actors:</p>
+        <h3><u>Actors:</u></h3>
 
         <ul id="Actors">
             <li>Keira Knightly</li>
@@ -31,8 +38,51 @@
 
     </div>
 
-    
+    <div class="quiz-container">
+        <h2><u>Pride and Prejudice Quiz</u></h2>
+        <p>Test your knowledge about Pride and Prejudice!</p>
+        <form id="quiz-form">
+            <div>
+                <p>1. What is Mr. Darcy's first name?</p>
+                <label><input type="radio" , name="q1" , value="A"> A. Charles</label>
+                <label><input type="radio" , name="q1" , value="B"> B. Jalen</label>
+                <label><input type="radio" , name="q1" , value="C"> C. Fitzwilliam</label>
+                <label><input type="radio" , name="q1" , value="D"> D. Phineas</label>
+            </div>
+            <div>
+                <p>2. Who is the author of the original novel <i>Pride and Prejudice</i>?</p>
+                <label><input type="radio" , name="q2" , value="A"> A. Jane Austen</label>
+                <label><input type="radio" , name="q2" , value="B"> B. Louisa May Alcott</label>
+                <label><input type="radio" , name="q2" , value="C"> C. Emily Bronte</label>
+                <label><input type="radio" , name="q2" , value="D"> D. Stuart R. Bell</label>
+            </div>
+            <div>
+                <p>3. Which Bennet sister is the third oldest?</p>
+                <label><input type="radio" , name="q3" , value="A"> A. Lydia</label>
+                <label><input type="radio" , name="q3" , value="B"> B. Kitty</label>
+                <label><input type="radio" , name="q3" , value="C"> C. Elizabeth</label>
+                <label><input type="radio" , name="q3" , value="D"> D. Mary</label>
+            </div>
+            <div>
+                <p>4. What is the name of Mr. Darcy's house?</p>
+                <label><input type="radio" , name="q4" , value="A"> A. Pemberley</label>
+                <label><input type="radio" , name="q4" , value="B"> B. Rosing's Park</label>
+                <label><input type="radio" , name="q4" , value="C"> C. Netherfield Park</label>
+                <label><input type="radio" , name="q4" , value="D"> D. Longbourn</label>
+            </div>
+            <div>
+                <p>5. Who is Elizabeth's best friend?</p>
+                <label><input type="radio" , name="q5" , value="A"> A. Lady Catherine</label>
+                <label><input type="radio" , name="q5" , value="B"> B. Charlotte Lucas</label>
+                <label><input type="radio" , name="q5" , value="C"> C. Lydia Bennet</label>
+                <label><input type="radio" , name="q5" , value="D"> D. Caroline Bingley</label>
+            </div> <br> <br>
 
+    <button type="button" onclick="submitQuiz()">Submit</button>
+    </form>
+    <div id="result"></div>
+    </div>
+    <script src="index.js"></script>
 
 </body>
 
